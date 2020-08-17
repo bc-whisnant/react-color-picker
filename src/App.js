@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import LargeSwatch from './components/LargeSwatch'
 import ColorPicker from './components/ColorPicker'
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
   }
 
   changeBackgroundColor = (e) => {
-    let target = e.target.classList[0]
+  let target = e.target.classList[0]
   
   switch(target) {
     default: 
@@ -51,7 +52,7 @@ class App extends Component {
     }
     return (
       <div className='App'>
-        <div className='large-swatch' style={style}></div>
+       <LargeSwatch style={style} />
         <br/>
         <ColorPicker changeBackgroundColor={this.changeBackgroundColor} />
       </div>
