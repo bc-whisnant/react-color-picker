@@ -44,10 +44,25 @@ class App extends Component {
         break;
     }
   };
+
+  reset = () => {
+    this.setState({
+      backgroundColor: 'black'
+    })
+
+  }
   render() {
     let style = {
       backgroundColor: this.state.backgroundColor,
     };
+
+    let buttonStyle = {
+      border: 'none',
+      borderRadius: '8%',
+      padding: '10px',
+      backgroundColor: this.state.backgroundColor,
+      color: 'white'
+    }
 
     let classNames = ['red', 'green', 'blue', 'orange', 'pink'];
     return (
@@ -62,8 +77,12 @@ class App extends Component {
             />
           ))}
         </div>
-
-        {/* <ColorPicker changeBackgroundColor={this.changeBackgroundColor} /> */}
+        <br/>
+        { this.state.backgroundColor !== '' ? 
+        <button onClick={this.reset} style={buttonStyle}>Reset</button> :
+        null
+        }
+        
       </div>
     );
   }
