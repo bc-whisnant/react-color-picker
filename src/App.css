@@ -38,6 +38,9 @@
 .pink {
   background-color: #FA00FF;
 }
+.purple { 
+  background-color: purple;
+}
 
 @media screen and (max-width: 768px) {
   .App {

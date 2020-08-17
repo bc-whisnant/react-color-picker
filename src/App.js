@@ -42,6 +42,11 @@ class App extends Component {
           backgroundColor: '#FA00FF',
         });
         break;
+      case 'purple':
+        this.setState({
+          backgroundColor: 'purple',
+        });
+        break;
     }
   };
 
@@ -64,7 +69,7 @@ class App extends Component {
       color: 'white'
     }
 
-    let classNames = ['red', 'green', 'blue', 'orange', 'pink'];
+    let classNames = ['red', 'green', 'blue', 'orange', 'pink', 'purple'];
     return (
       <div className='App'>
         <LargeSwatch style={style} />
