@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ColorPicker from './components/ColorPicker'
 
 class App extends Component {
 
@@ -51,13 +52,8 @@ class App extends Component {
     return (
       <div className='App'>
         <div className='large-swatch' style={style}></div>
-        <div className='button-container'>
-          <div className='red' onClick={this.changeBackgroundColor}></div>
-          <div className='green' onClick={this.changeBackgroundColor}></div>
-          <div className='blue' onClick={this.changeBackgroundColor}></div>
-          <div className='orange' onClick={this.changeBackgroundColor}></div>
-          <div className='pink' onClick={this.changeBackgroundColor}></div>
-        </div>
+        <br/>
+        <ColorPicker changeBackgroundColor={this.changeBackgroundColor} />
       </div>
     );
   }
