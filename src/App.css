@@ -8,6 +8,7 @@
   max-width: 900px;
   height: 410px;
   background-color: black;
+  border-radius: 15px;
 }
   
  .button-container {
@@ -19,6 +20,7 @@
 .button-container > div {
   height: 210px;
   width: 180px;
+  border-radius: 15px;
 }
 .red {
   background-color: red;
